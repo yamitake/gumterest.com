@@ -66,18 +66,26 @@
         <div class="tile"><p style="background:#ccaaff;height:200px;">test</p></div>
         <div class="tile"><p style="background:#ddaaff;height:100px;">test</p></div>
         <div class="tile"><p style="background:#0000ff;height:100px;">test</p></div>
-        <div class="tile"><p style="background:#ffaa11;height:100px;">test</p></div>
+        <div class="tile">
+          <a href="#">
+            <img href="http://www.franklin-township.com/192_193.jpg" />
+          </a>
+          <div class="user">
+            <a target="_blank" href="#">
+              <img href="https://secure.gravatar.com/avatar/16f1bbb64b4d2bcbedc633acc8c083fa?s=140&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png" />
+            </a>
+            <p>アマチュアギタリストの音源ですが買って下さると活動資金の足しになるので助かります！ Merodic Metal Sound on Gumroad! https://t.co/UskRhEud</p>
+          </div>
+        </div>
       </div>
     </div>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
     <script type="text/javascript" src="jquery.fluentgallery.js"></script>
     <script id="tileTemplate" type="text/x-jquery-tmpl">
-        <li><b>${Name}</b> (${ReleaseYear})</li>
         <div class="tile">
           <a href="{url}">
             <img class="" href="${capture_url}" />
           </a>
-          <p></p>
           <div class="user">
             <a target="_blank" href="${twitter_url}">
               <img href="{$user_icon}" />
