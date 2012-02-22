@@ -15,7 +15,7 @@
     <meta property="og:image" content="http://yamitake.github.com/images/yaprlogo125x125.jpg" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', '']);
@@ -32,20 +32,61 @@
   <body>
     <div class="topbar topbar-fixed-top">
       <div class="topbar-inner">
-        <div class="container">
-          <a class="brand" href="."> <img src="./images/logo-mini.png" alt="Yamitake's github pages!" /> Yamitake's github pages! </a>
+        <div class="container-fluid">
+          <a class="brand" href=".">Gumterest</a>
           <div class="nav-collapse">
             <ul class="nav">
               <li class="active">
-                <a href="#">Home</a>
+                <a href=".">Home</a>
               </li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
-    <div class="container">
-      <h1 id="yamitakes-github-pages">Yamitake’s github pages.</h1>
+    <div class="container-fluid">
+      <div id="target" class="fluentgallery">
+        <div class="tile"><p style="background:#ffaaff;height:100px;">test</p></div>
+        <div class="tile"><p style="background:#00aaff;height:100px;">test</p></div>
+        <div class="tile"><p style="background:#ccaaff;height:200px;">test</p></div>
+        <div class="tile"><p style="background:#ddaaff;height:100px;">test</p></div>
+        <div class="tile"><p style="background:#0000ff;height:100px;">test</p></div>
+        <div class="tile"><p style="background:#ffaa11;height:100px;">test</p></div>
+        <div class="tile"><p style="background:#00aa22;height:300px;">test</p></div>
+        <div class="tile"><p style="background:#ffaa44;height:130px;">test</p></div>
+        <div class="tile"><p style="background:#00aa66;height:100px;">test</p></div>
+        <div class="tile"><p style="background:#ffaa77;height:300px;">test</p></div>
+        <div class="tile"><p style="background:#22aa88;height:100px;">test</p></div>
+        <div class="tile"><p style="background:#00aa99;height:100px;">test</p></div>
+        <div class="tile"><p style="background:#ffaa00;height:300px;">test</p></div>
+        <div class="tile"><p style="background:#ffaa00;height:130px;">test</p></div>
+        <div class="tile"><p style="background:#00aa11;height:100px;">test</p></div>
+        <div class="tile"><p style="background:#ffaa22;height:140px;">test</p></div>
+        <div class="tile"><p style="background:#00aaff;height:100px;">test</p></div>
+        <div class="tile"><p style="background:#ccaaff;height:200px;">test</p></div>
+        <div class="tile"><p style="background:#ddaaff;height:100px;">test</p></div>
+        <div class="tile"><p style="background:#0000ff;height:100px;">test</p></div>
+        <div class="tile"><p style="background:#ffaa11;height:100px;">test</p></div>
+      </div>
     </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.fluentgallery.js"></script>
+    <script id="tileTemplate" type="text/x-jquery-tmpl">
+        <li><b>${Name}</b> (${ReleaseYear})</li>
+        <div class="tile">
+          <a href="{url}">
+            <img class="" href="${capture_url}" />
+          </a>
+          <p></p>
+          <div class="user">
+            <a target="_blank" href="${twitter_url}">
+              <img href="{$user_icon}" />
+            </a>
+            <p>{$tweet}</p>
+          </div>
+        </div>
+    </script>
+    
+    <script type="text/javascript" src="init.js"></script>
   </body>
 </html>
