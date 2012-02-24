@@ -13,12 +13,23 @@ body {
 
 .fluentgallery .tile{
   position: absolute;
+  text-align:center;
   background-color: #FFFFFF;
     box-shadow: 0 1px 1px rgba(134, 250, 125, 0.4);
     padding: 5px;
-    width: 222px;
+    width: 212px;
     border:1px solid #efefef;
     margin:5px;
+}
+
+.tile .img_content{
+  max-width:200px;
+  margin:0px auto;
+}
+
+.user{
+  padding:5px;
+  clear:both;
 }
 
 .user img{
@@ -30,6 +41,7 @@ body {
 .user p{
   float : left;
   font-size : 10px;
-  width: 85%;
+  padding-left: 10px;
+  width: 80%;
 }
 

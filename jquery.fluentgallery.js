@@ -51,8 +51,7 @@ THE SOFTWARE.
       resize     : true ,
       add : null ,
       margin_bottom : 0 ,
-      reset : true ,
-      order : true ,
+      reset : true
     };
     
     var opts = $.extend(defaults , options);
@@ -73,7 +72,7 @@ THE SOFTWARE.
       }
       
       if(opts.add != null && cols_height_arrays[$(area_elem)]){
-        if(load_flag){
+        if(false && load_flag){
           stack_div.push(opts.add);
           return false;
         }
@@ -153,7 +152,7 @@ THE SOFTWARE.
    * append
    */
   function append(target_elem , div){
-    //load_flag = true;
+    load_flag = true;
     var tile = $(div).hide();
     
     $(div).find("img.content_img").each(function(){
