@@ -57,26 +57,6 @@
     </div>
     <div class="container-fluid">
       <div id="target" class="fluentgallery">
-        <div class="tile"><p style="background:#ffaaff;height:100px;">test</p></div>
-        <div class="tile"><p style="background:#00aaff;height:100px;">test</p></div>
-        <div class="tile"><p style="background:#ccaaff;height:200px;">test</p></div>
-        <div class="tile"><p style="background:#ddaaff;height:100px;">test</p></div>
-        <div class="tile"><p style="background:#0000ff;height:100px;">test</p></div>
-        <div class="tile"><p style="background:#ffaa11;height:100px;">test</p></div>
-        <div class="tile"><p style="background:#00aa22;height:300px;">test</p></div>
-        <div class="tile"><p style="background:#ffaa44;height:130px;">test</p></div>
-        <div class="tile"><p style="background:#00aa66;height:100px;">test</p></div>
-        <div class="tile"><p style="background:#ffaa77;height:300px;">test</p></div>
-        <div class="tile"><p style="background:#22aa88;height:100px;">test</p></div>
-        <div class="tile"><p style="background:#00aa99;height:100px;">test</p></div>
-        <div class="tile"><p style="background:#ffaa00;height:300px;">test</p></div>
-        <div class="tile"><p style="background:#ffaa00;height:130px;">test</p></div>
-        <div class="tile"><p style="background:#00aa11;height:100px;">test</p></div>
-        <div class="tile"><p style="background:#ffaa22;height:140px;">test</p></div>
-        <div class="tile"><p style="background:#00aaff;height:100px;">test</p></div>
-        <div class="tile"><p style="background:#ccaaff;height:200px;">test</p></div>
-        <div class="tile"><p style="background:#ddaaff;height:100px;">test</p></div>
-        <div class="tile"><p style="background:#0000ff;height:100px;">test</p></div>
         <div class="tile">
           <a href="#" target="_blank">
             <img class="img_content" src="http://www.franklin-township.com/192_193.jpg" />
@@ -96,13 +76,13 @@
     <script id="tileTemplate" type="text/x-jquery-tmpl">
         <div class="tile">
           <a href="https://t.co/lZIQtBM6">
-            <img class="content_img" href="http://capture.heartrails.com/200x200/free?https://t.co/lZIQtBM6" />
+            <img class="content_img" src="http://capture.heartrails.com/200x200/free?https://t.co/lZIQtBM6" />
           </a>
           <div class="user">
             <a target="_blank" href="${twitter_url}">
-              <img alt="" href="{$profile_image_url}" />
+              <img alt="" src="${profile_image_url}" />
             </a>
-            <p>{$text}</p>
+            <p>${text}</p>
           </div>
         </div>
     </script>

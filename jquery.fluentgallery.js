@@ -164,12 +164,13 @@
     }
 
     if($(div).find("img.content_img").length == 0) {
-      console.log("monstar.fm");
       deploy(tile);
       //next_append(target_elem);
       load_flag = false;
       return;
     }
+    
+    console.log("ffskdj");
 
     $(div).find("img.content_img").each(function() {
       $(this).bind("load", function() {
