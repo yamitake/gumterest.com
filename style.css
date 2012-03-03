@@ -45,12 +45,13 @@ body {
 }
 
 .capture{
-  height:200px;
+  height:160px;
+  display:block;
 }
 
 .tile .img_content{
   max-width:200px;
-  height:200px;
+  height:160px;
   margin:0px auto;
 }
 
