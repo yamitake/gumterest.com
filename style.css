@@ -44,6 +44,10 @@ body {
     margin:5px;
 }
 
+.capture{
+  height:200px;
+}
+
 .tile .img_content{
   max-width:200px;
   height:200px;

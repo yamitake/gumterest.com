@@ -57,17 +57,25 @@
     </div>
     <div class="container-fluid">
       <div id="target" class="fluentgallery">
-        <div class="tile">
-          <a href="#" target="_blank">
-            <img class="img_content" src="http://www.franklin-township.com/192_193.jpg" />
-          </a>
-          <div class="user">
-            <a target="_blank" href="#">
-              <img src="https://secure.gravatar.com/avatar/16f1bbb64b4d2bcbedc633acc8c083fa?s=140&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png" />
-            </a>
-            <p>アマチュアギタリストの音源ですが買って下さると活動資金の足しになるので助かります！ Merodic Metal Sound on Gumroad! https://t.co/UskRhEud</p>
-          </div>
-        </div>
+      </div>
+      <div class="display:none;">
+          <div class="span5">
+          <h3>About me</h3>
+          <ul>
+            <li>
+              <a target="_blank" href="http://yapr.seesaa.net/">Grow! account</a>
+            </li>
+            <li>
+              <a target="_blank" href="http://growbutton.com/yamitake">Grow! account</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://github.com/yamitake/">github account</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://twitter.com/#!/yamitake">twitter @yamitake</a>
+            </li>
+          </ul>
+      </div>
       </div>
     </div>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
@@ -75,14 +83,14 @@
     <script type="text/javascript" src="jquery.fluentgallery.js"></script>
     <script id="tileTemplate" type="text/x-jquery-tmpl">
         <div class="tile">
-          <a href="https://t.co/lZIQtBM6">
+          <a class="capture" href="${download_url}">
             <img class="content_img" src="http://capture.heartrails.com/200x200/free?${download_url}" />
           </a>
           <div class="user">
             <a target="_blank" href="${twitter_url}">
               <img alt="" src="${profile_image_url}" />
             </a>
-            <p>${text}</p>
+            <p>{{html text}}</p>
           </div>
         </div>
     </script>
